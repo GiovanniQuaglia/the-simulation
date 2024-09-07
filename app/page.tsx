@@ -1,7 +1,9 @@
+import { redirect } from 'next/navigation';
+
 export const metadata = {
-  title: "App Router",
+  title: "Reonic",
 };
 
-export default function Page() {
-  return <h1>App Router</h1>;
+export default function Home() {
+  redirect('/simulation');
 }
